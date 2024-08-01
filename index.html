@@ -19,10 +19,7 @@
       <main>
         <div class="main-container">
           <div class="back">
-            <img
-              src="./assets/icons/arrow-left-02.svg.svg"
-              alt="ícone de voltar"
-            />
+            <img src="./assets/icons/arrow-left-02.svg" alt="ícone de voltar" />
             <span>Voltar</span>
           </div>
 
@@ -31,6 +28,61 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Informações da criança</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome Completo</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Qual o nome da criança"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birthdate">Data de nascimento</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  lang="pt-br"
+                />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select type="text" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medial-info"> Informações médicas </label>
+                <textarea
+                  name="medial-info"
+                  id="medial-info"
+                  cols="30"
+                  rows="10"
+                  placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"
+                ></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <input type="file" id="birth-file" name="birth-file" />
+                <img src="./assets/icons/cloud-upload.svg" alt="" />
+                <p>
+                  Clique aqui para <br />
+                  selecionar os arquivos
+                </p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
 

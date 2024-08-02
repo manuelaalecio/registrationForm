@@ -6,8 +6,8 @@ button {
   border-radius: 0.5rem;
   cursor: pointer;
 
-  & .btn-primary {
-    color: var(--surface-primary);
+  &.btn-primary {
+    color: white;
     background-color: var(--brand-dark);
 
     &:hover,
@@ -16,7 +16,7 @@ button {
     }
   }
 
-  & .btn-secundary {
+  &.btn-secondary {
     margin-left: auto;
     border: 1px solid var(--text-highlight);
 

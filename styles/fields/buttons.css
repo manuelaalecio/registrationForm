@@ -19,11 +19,11 @@ button {
   & .btn-secundary {
     margin-left: auto;
     border: 1px solid var(--text-highlight);
-  }
 
-  &:hover,
-  &:focus {
-    color: var(--brand-dark);
-    outline: 0.25rem solid var(--surface-secondary);
+    &:hover,
+    &:focus {
+      color: var(--brand-dark);
+      outline: 0.25rem solid var(--surface-secondary);
+    }
   }
 }
